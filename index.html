@@ -1,0 +1,27 @@
+<html lang='en'>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title>TEST</title>
+
+		<script type="text/javascript" src="CFInstall.min.js"></script>
+
+		<script type="text/javascript">
+		
+		// ChromeFrame Install Guidance
+		if(window.attachEvent) {
+			window.attachEvent('onload', function() {
+				CFInstall.check({
+					mode : 'inline', //inline, overlay, none
+					node : 'cfinstall',
+					url : 'cfinstall.html'
+				});
+			});
+		}
+		</script>
+	</head>
+
+	<body>
+		<div id="cfinstall"></div>
+	</body>
+</html>
